@@ -5,8 +5,8 @@
 }
 
 .socialicon {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
   background: #e4e4e4;
@@ -16,8 +16,8 @@
 }
 
 .socialiconcircle1 {
-  width: 150px;
-  height: 150px;
+  width: 60px;
+  height: 60px;
   position: absolute;
   left: 0px;
   top: 100px;
@@ -27,8 +27,8 @@
 }
 
 .socialiconcircle2 {
-  width: 94px;
-  height: 94px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: #fff;
   position: absolute;
@@ -37,7 +37,7 @@
 }
 
 .icons {
-  font-size: 2em;
+  font-size: 0.5em;
   position: absolute;
   left: 33px;
   top: 33px;
@@ -61,8 +61,8 @@
 .pinterestcolor {
   background: #c8232c;
 }
-.youtubecolor {
-  background: #c4302b;
+.whatsAppColor {
+  background: #25d366;
 }
 .githubcolor {
   background: #171515;
@@ -70,8 +70,8 @@
 .linkedincolor {
   background: #0e76a8;
 }
-.tumblrcolor {
-  background: #34526f;
+.discordColor {
+  background: #5865f2;
 }
 
 /* icons color */
@@ -90,8 +90,8 @@
 .pinterest {
   color: #c8232c !important;
 }
-.youtube {
-  color: #c4302b !important;
+.whatsApp {
+  color: #25d366 !important;
 }
 .github {
   color: #171515 !important;
@@ -99,8 +99,8 @@
 .linkedin {
   color: #0e76a8 !important;
 }
-.tumblr {
-  color: #34526f !important;
+.discord {
+  color: #5865f2 !important;
 }
 
 @-webkit-keyframes fill {
