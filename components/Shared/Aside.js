@@ -1,15 +1,43 @@
 "use client";
 import { Avatar } from "@material-tailwind/react";
 import SocialIcons from "./SocialIcons";
+import TypeWriter from "./Typewriter";
+import { Button } from "@material-tailwind/react";
+import { FaDownload } from "react-icons/fa";
+import { useState } from "react";
+import { FcRight } from "react-icons/fc";
 
 const Aside = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleAside = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <aside className="-translate-x-80 fixed inset-0 z-50 my-4 ml-4 h-[calc(100vh-32px)] w-72 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100 dark:bg-blue-gray-100 shadow-md shadow-blue-gray-500/5">
-        <div className="p-3 mb-3 overflow-hidden minfo__sidebar bg-white dark:bg-nightBlack rounded-2xl">
-          <div className="mx-4 mt-12 text-center user-info lg:mx-6">
-            <a className="block mx-auto border-6 pb-4" href="/">
+      <aside
+        className={`${
+          isOpen ? "translate-x-0" : "-translate-x-80"
+        } sticky top-4 h-[92svh] inset-0 z-50 my-4 ml-4 pb-10 w-72 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100 dark:bg-blue-gray-100 shadow-md shadow-blue-gray-500/5 bg-white`}
+      >
+        <div className="p-3 mb-3 overflow-hidden bg-white dark:bg-nightBlack rounded-2xl">
+          <div className="mx-4 mt-6 text-center lg:mx-6">
+            <a
+              className="block mx-auto border-6 pb-4"
+              href="/"
+              style={{
+                perspective: "2000px",
+                transformStyle: "preserve-3d",
+                perspectiveOrigin: "53% 57%",
+              }}
+            >
               <Avatar
+                style={{
+                  transform: "rotateX(4deg) rotateY(6deg) rotateZ(2deg)",
+                  boxShadow: "1px 2px 33px 3px rgba(0, 0, 0, 0.35)",
+                  WebkitBoxShadow: "1px 2px 33px 3px rgba(0, 0, 0, 0.35)",
+                  MozBoxShadow: "1px 2px 33px 3px rgba(0, 0, 0, 0.35)",
+                }}
                 size="xxl"
                 alt="avatar"
                 src="/profile.png"
@@ -19,18 +47,18 @@ const Aside = () => {
             <h6 className="mb-1 text-lg font-semibold text-black dark:text-white name">
               MD RIFADUL ISLAM
             </h6>
-            <div className="leading-none cd-headline clip is-full-width">
+            <div className="leading-none cd-headline clip is-full-width w-full">
               <h6
-                className="text-sm cd-words-wrapper designation text-theme after:!bg-theme"
+                className="text-sm cd-words-wrapper designation text-theme after:!bg-theme text-center w-full"
                 style={{ width: "107.213px" }}
               >
-                <b className="font-normal is-hidden">Web Developer</b>
-                <b className="font-normal is-hidden">Photographers</b>
-                <b className="font-normal is-visible">Web Designer</b>
+                <div className="whitespace-nowrap font-semibold text-center ml-10">
+                  <TypeWriter></TypeWriter>
+                </div>
               </h6>
             </div>
           </div>
-          <div className="pt-6 mx-4 border-t lg:mx-6 user-meta-info md:mx-7 my-7 border-platinum dark:border-metalBlack">
+          <div className="pt-6 mx-4 border-t lg:mx-6 md:mx-7 my-7">
             <ul className="space-y-3">
               <li className="flex text-sm">
                 <span className="flex-1 font-medium text-black dark:text-white">
@@ -52,7 +80,35 @@ const Aside = () => {
               </li>
             </ul>
           </div>
-          <SocialIcons />
+          <div className="border-t mx-4">
+            <div className="border-t mb-4"></div>
+            <h2 className="ml-2 font-semibold mb-3">Let&apos;s Get Social</h2>
+            <SocialIcons />
+          </div>
+        </div>
+        <div className="grid place-items-center w-full z-50">
+          <a href="https://drive.google.com/file/d/1hojg5_y1kYig2PAZpK153xh3zIgFuz17/view?usp=sharing">
+            <Button
+              size="md"
+              variant="gradient"
+              color="light-blue"
+              className="group relative flex items-center gap-3 overflow-hidden pr-[72px]"
+            >
+              Download Resume
+              <span className="absolute right-0 grid h-full w-12 place-items-center bg-light-blue-600 transition-colors group-hover:bg-light-blue-700">
+                <FaDownload className="h-6 w-6" />
+              </span>
+            </Button>
+          </a>
+        </div>
+        <div
+          className={`${
+            isOpen ? "-right-7" : "-right-12"
+          } xl:hidden fixed top-0 z-50`}
+        >
+          <button color="white" onClick={toggleAside} className="">
+            <FcRight className="h-8 w-8 text-black" />
+          </button>
         </div>
       </aside>
     </>

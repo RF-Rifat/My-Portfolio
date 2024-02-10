@@ -7,7 +7,7 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 const SocialIcons = () => {
   return (
     <>
-      <div className="grid grid-cols-3 place-items-center pl-2 pr-6">
+      <div className="grid grid-cols-3 place-items-center pr-4">
         <a href="https://www.facebook.com/rfrifat6344" className="socialicon">
           <div className="facebookcolor socialiconcircle1" />
           <div className="socialiconcircle2 grid place-items-center">
