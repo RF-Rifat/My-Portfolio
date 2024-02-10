@@ -4,7 +4,6 @@ import "./icon.css";
 const SocialIcons = () => {
   return (
     <>
-      <h1>Social Icon Animation</h1>
       <div id="socialicons">
         <div className="socialicon">
           <div className="dribbblecolor socialiconcircle1" />
@@ -63,45 +62,6 @@ const SocialIcons = () => {
       </div>
     </>
   );
-};
-
-const socialIconStyle = {
-  width: "100px",
-  height: "100px",
-  borderRadius: "50%",
-  overflow: "hidden",
-  background: "#e4e4e4",
-  position: "relative",
-  float: "left",
-  margin: "0px 0px 10px 10px",
-};
-
-const dribbbleColorStyle = {
-  width: "150px",
-  height: "150px",
-  position: "absolute",
-  left: "0px",
-  top: "100px",
-  animation: "fill 2s infinite",
-  backgroundColor: "#ea4c89",
-};
-
-const socialIconCircle2Style = {
-  width: "94px",
-  height: "94px",
-  borderRadius: "50%",
-  background: "#fff",
-  position: "absolute",
-  left: "3px",
-  top: "3px",
-};
-
-const iconStyle = {
-  fontSize: "2em",
-  position: "absolute",
-  left: "33px",
-  top: "33px",
-  animation: "iconjump 2s infinite",
 };
 
 export default SocialIcons;
