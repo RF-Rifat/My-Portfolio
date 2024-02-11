@@ -79,20 +79,24 @@ export function SideNavbar() {
       </div>
       {/* mobile tab */}
 
-      <div className="fixed bottom-0 left-1/4 md:hidden z-50">
+      <div className="fixed bottom-0 md:hidden z-50">
         <Tabs value="">
-          <TabsHeader className="bg-blue-gray-400">
-            {data.map(({ label, value, icon }) => (
-              <Link key={icon} href={`#${value}`}>
-                <Tab value={value} className="place-items-start">
-                  <div className="flex items-center gap-2">
-                    {React.createElement(icon, { className: "w-6 h-8 text-blue-900" })}
-                    {label}
-                  </div>
-                </Tab>
-              </Link>
-            ))}
-          </TabsHeader>
+          <div className="mx-auto grid place-items-center w-screen">
+            <TabsHeader className="bg-gray-800  flex justify-center w-full">
+              {data.map(({ label, value, icon }) => (
+                <Link key={icon} href={`#${value}`}>
+                  <Tab value={value} className="place-items-start">
+                    <div className="flex items-center gap-2">
+                      {React.createElement(icon, {
+                        className: "w-8 h-8 text-blue-900",
+                      })}
+                      {label}
+                    </div>
+                  </Tab>
+                </Link>
+              ))}
+            </TabsHeader>
+          </div>
         </Tabs>
       </div>
     </>
