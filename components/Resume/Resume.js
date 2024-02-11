@@ -10,7 +10,10 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import { PiCurrencyCircleDollarBold } from "react-icons/pi";
+import {
+  PiCurrencyCircleDollarBold,
+  PiMathOperationsBold,
+} from "react-icons/pi";
 
 import Link from "next/link";
 import { IoFastFoodOutline } from "react-icons/io5";
@@ -29,11 +32,12 @@ const Resume = () => {
         </div>
         <div className="mb-8 mt-7 md:my-10 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            Work <span className="font-semibold text-theme">Experience</span>
+            Recent <span className="font-semibold text-theme">Projects</span>
           </h2>
           <p className="max-w-xl mt-4 md:mt-6 subtitle">
-            I design products that are more than pretty. I make them shippable
-            and usable, tempor non mollit dolor et do aute
+            I design products that prioritize functionality and user experience,
+            ensuring they are not only visually appealing but also practical and
+            easy to use.
           </p>
         </div>
         {/*./section-title*/}
@@ -96,7 +100,7 @@ const Resume = () => {
               </div>
               <Timeline>
                 <TimelineItem className="pb-4">
-                  <TimelineConnector  />
+                  <TimelineConnector />
                   <TimelineHeader>
                     <TimelineIcon className="md:p-2">
                       <IoFastFoodOutline className="h-5 w-5" />
@@ -185,62 +189,47 @@ const Resume = () => {
             My <span className="font-semibold text-theme">Education</span>
           </h2>
           <p className="max-w-xl mt-4 md:mt-6 subtitle">
-            I design products that are more than pretty. I make them shippable
-            and usable, tempor non mollit dolor et do aute
+            Education is not just about acquiring knowledge; it&apos;s about
+            embracing growth, honing skills, and fostering a deep understanding
+            of the world around us.
           </p>
         </div>
         <div className="experience">
-          <ul className="space-y-5 md:space-y-11 relative md:before:content-[''] md:before:absolute md:before:left-64 md:before:border-r md:before: md:dark:before:border-metalBlack md:before:h-[calc(100%_-1.5rem)] md:before:top-1/2 md:before:-translate-y-1/2">
+          <ul className="space-y-4 md:space-y-0">
             <li className="p-5 border rounded-xl md:flex max-md:space-y-2 md:border-0 md:p-0 md:rounded-none">
               <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
                 <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
-                  Oxford University
+                  K.B.M College, Dinajpur
                 </h6>
-                <p className="text-[13px] md:text-sm text-theme">2016-2018</p>
-              </div>
-              <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
-                <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
-                  Diploma in Computer
-                </h4>
-                <p>
-                  Owing to advancements in product other designer technologies
-                  aute voluptate.
+                <p className="text-[13px] md:text-sm text-theme">
+                  Expected Graduation: 2027
                 </p>
               </div>
-            </li>
-            <li className="p-5 border rounded-xl md:flex max-md:space-y-2   md:border-0 md:p-0 md:rounded-none">
-              <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
-                <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
-                  Google
-                </h6>
-                <p className="text-[13px] md:text-sm text-theme">2018 - 2022</p>
-              </div>
-              <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
-                <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
-                  BSc in Engineering
-                </h4>
-                <p>
-                  Owing to advancements in product other designer technologies
-                  aute voluptate.
-                </p>
-              </div>
-            </li>
-            <li className="p-5 border rounded-xl md:flex max-md:space-y-2   md:border-0 md:p-0 md:rounded-none">
-              <div className="flex items-center justify-between mb-5 md:w-64 md:block md:mb-0">
-                <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
-                  Oxford University
-                </h6>
-                <p className="text-[13px] md:text-sm text-theme">2014-2018</p>
-              </div>
-              <div className="md:flex-1 md:pl-16 relative md:before:content-[''] md:before:absolute md:before:-left-1 md:before:top-3 md:before:w-2 md:before:h-2 md:before:bg-theme md:before:rounded-full md:before:shadow-dots_glow">
-                <h4 className="text-xl xl:text-2xl font-medium xl:font-medium leading-7 text-black dark:text-white mb-2.5">
-                  Php Development
-                </h4>
-                <p>
-                  Owing to advancements in product other designer technologies
-                  aute voluptate.
-                </p>
-              </div>
+              <Timeline>
+                <TimelineItem className="pb-4">
+                  <TimelineConnector />
+                  <TimelineHeader>
+                    <TimelineIcon className="md:p-2">
+                      <PiMathOperationsBold className="h-5 w-5" />
+                    </TimelineIcon>
+                    <Typography variant="h5" color="blue-gray">
+                      Bachelor of Science in Mathematics
+                    </Typography>
+                  </TimelineHeader>
+                  <TimelineBody className="mb:pb-6">
+                    <Typography
+                      color="gary"
+                      className="font-normal text-gray-600 mb-3"
+                    >
+                      Pursuing a Bachelor of Science in Mathematics at K.B.M
+                      College, Dinajpur. The program focuses on various aspects
+                      of mathematics, including calculus, algebra, statistics,
+                      and discrete mathematics, providing a strong foundation in
+                      theoretical and applied mathematics.
+                    </Typography>
+                  </TimelineBody>
+                </TimelineItem>
+              </Timeline>
             </li>
           </ul>
         </div>

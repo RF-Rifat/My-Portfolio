@@ -60,21 +60,23 @@ export function SideNavbar() {
   ];
   return (
     <>
-      <div className="fixed top-1/3 right-10 z-50 hidden md:block">
+      <div className="fixed right-10 z-50 hidden md:block">
         <Tabs value="" orientation="vertical">
-          <TabsHeader className="w-14 gap-2">
-            {data.map(({ label, value, icon }) => (
-              <Link key={icon} href={`#${value}`}>
-                <Tab value={value} className="place-items-start">
-                  <div className="flex items-center gap-2">
-                    {React.createElement(icon, { className: "w-6 h-8" })}
+          <div className="grid place-items-center h-screen">
+            <TabsHeader className="w-14 gap-2 opacity-100">
+              {data.map(({ label, value, icon }) => (
+                <Link key={icon} href={`#${value}`}>
+                  <Tab value={value} className="place-items-start p-3">
+                    <div className="flex items-center gap-2">
+                      {React.createElement(icon, { className: "w-6 h-8" })}
 
-                    {label}
-                  </div>
-                </Tab>
-              </Link>
-            ))}
-          </TabsHeader>
+                      {label}
+                    </div>
+                  </Tab>
+                </Link>
+              ))}
+            </TabsHeader>
+          </div>
         </Tabs>
       </div>
       {/* mobile tab */}
@@ -82,20 +84,22 @@ export function SideNavbar() {
       <div className="fixed bottom-0 md:hidden z-50">
         <Tabs value="">
           <div className="mx-auto grid place-items-center w-screen">
-            <TabsHeader className="bg-gray-800  flex justify-center w-full">
-              {data.map(({ label, value, icon }) => (
-                <Link key={icon} href={`#${value}`}>
-                  <Tab value={value} className="place-items-start">
-                    <div className="flex items-center gap-2">
-                      {React.createElement(icon, {
-                        className: "w-8 h-8 text-blue-900",
-                      })}
-                      {label}
-                    </div>
-                  </Tab>
-                </Link>
-              ))}
-            </TabsHeader>
+            <div className="bg-blue-gray-500 rounded-t-lg">
+              <TabsHeader className="opacity-100 flex justify-center w-full rounded-b-none">
+                {data.map(({ label, value, icon }) => (
+                  <Link key={icon} href={`#${value}`}>
+                    <Tab value={value} className="place-items-start p-3">
+                      <div className="flex items-center gap-2">
+                        {React.createElement(icon, {
+                          className: "w-6 h-6",
+                        })}
+                        {label}
+                      </div>
+                    </Tab>
+                  </Link>
+                ))}
+              </TabsHeader>
+            </div>
           </div>
         </Tabs>
       </div>
