@@ -10,18 +10,10 @@ import {
 } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { HiAcademicCap } from "react-icons/hi2";
-import { FaRegListAlt } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
-import { useMediaQuery } from "react-responsive";
+import { FaMapMarked } from "react-icons/fa";
+
 export function SideNavbar() {
-  const [resTab, setResTab] = useState(true);
-  const smallDevice = useMediaQuery({
-    query: "(min-width: 900px)",
-  });
-  useEffect(() => {
-    setResTab(smallDevice);
-  }, [smallDevice]);
-  console.log(smallDevice);
   const data = [
     {
       label: "",
@@ -53,14 +45,14 @@ export function SideNavbar() {
     },
     {
       label: "",
-      value: "settings",
-      icon: Cog6ToothIcon,
+      value: "map",
+      icon: FaMapMarked,
       desc: "",
     },
   ];
   return (
     <>
-      <div className="fixed right-10 z-50 hidden md:block">
+      <div className="fixed right-4 lg:right-10 z-50 hidden md:block">
         <Tabs value="" orientation="vertical">
           <div className="grid place-items-center h-screen">
             <TabsHeader className="w-14 gap-2 opacity-100">

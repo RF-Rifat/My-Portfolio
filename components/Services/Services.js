@@ -5,14 +5,20 @@ import { MdOutlineDeveloperMode } from "react-icons/md";
 const Services = () => {
   return (
     <>
-      <div id="services" className="py-8 md:p-8 bg-white  rounded-2xl service-section lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border">
-        <div className="inline-flex items-center gap-4 px-2 font-semibold py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name  200 rounded-4xl rounded">
+      <div
+        id="services"
+        className="py-8 md:p-8 bg-white  rounded-2xl service-section lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border px-5"
+      >
+        <div className="inline-flex items-center gap-4 font-semibold px-2 py-2 text-xs tracking-wide dark:text-white dark:bg-gray-800 border lg:px-5 section-name  200 rounded-4xl rounded">
           <FcServices className="h-5 w-5" />
           SERVICES
         </div>
         <div className="mb-8 mt-7 md:my-10 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            My <span className="font-semibold text-theme">Services</span>
+            My{" "}
+            <span className="font-semibold text-theme text-blue-500">
+              Services
+            </span>
           </h2>
           <p className="max-w-xl mt-4 md:mt-6 subtitle">
             As a MERN stack developer, I offer the following services to help

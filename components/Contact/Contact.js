@@ -132,6 +132,7 @@ const Contact = () => {
         </div>
         {/* Location Map */}
         <iframe
+        id="map"
           className="w-full overflow-hidden border-10 embed-map h-80 2xl:h-96 rounded-2xl"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3419.155888782968!2d88.6207782033622!3d25.63350034042849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1707640145880!5m2!1sen!2sbd"
           aria-label="Contact Map"

@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { SpeedDialWithTextOutside } from "@/components/Shared/SpeedDial";
 import CustomCursor from "@/components/AnimatedCursor";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="max-w-[90rem] mx-auto">
           {children}
-          <SpeedDialWithTextOutside />
+
           <CustomCursor />
         </div>
       </body>

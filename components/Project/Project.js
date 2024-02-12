@@ -1,12 +1,13 @@
 "use client";
 import { Typography } from "@material-tailwind/react";
+import { FcNook } from "react-icons/fc";
 
 const Project = () => {
   return (
     <>
       <div className="px-5 py-8 md:p-8 bg-white rounded-2xl service-section lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border">
         <div className="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name  200 rounded-4xl">
-          <i className="fal fa-tasks-alt text-theme" />
+          <FcNook className="h-5 w-5" />
           PORTFOLIO
         </div>
         <div className="mt-5 mb-8 md:my-10 section-title">
