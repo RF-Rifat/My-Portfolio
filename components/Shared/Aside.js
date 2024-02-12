@@ -49,7 +49,7 @@ const Aside = () => {
             </h6>
             <div className="leading-none cd-headline clip is-full-width w-full">
               <h6
-                className="text-sm cd-words-wrapper designation text-theme after:!bg-theme text-center w-full"
+                className="text-sm cd-words-wrapper designation  after:!bg-theme text-center w-full"
                 style={{ width: "107.213px" }}
               >
                 <div className="whitespace-nowrap font-semibold text-center ml-10">

@@ -6,17 +6,18 @@ const Project = () => {
   return (
     <>
       <div className="px-5 py-8 md:p-8 bg-white rounded-2xl service-section lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border">
-        <div className="inline-flex items-center gap-2 px-4 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name  200 rounded-4xl">
+        <div className="inline-flex items-center gap-2 px-2 py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name  200 rounded-4xl">
           <FcNook className="h-5 w-5" />
           PORTFOLIO
         </div>
         <div className="mt-5 mb-8 md:my-10 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            Featured <span className="font-semibold text-theme">Projects</span>
+            Featured{" "}
+            <span className="font-semibold  text-blue-500">Projects</span>
           </h2>
           <p className="max-w-xl mt-4 md:mt-6 subtitle">
-            I design products that are more than pretty. I make them shippable
-            and usable, ttempor non mollit dolor et do aute
+            Dive into a collection of my recent projects, where each endeavor is
+            a testament to my passion for creating innovative solutions.
           </p>
         </div>
         {/*./section-title*/}

@@ -32,7 +32,8 @@ const Resume = () => {
         </div>
         <div className="mb-8 mt-7 md:my-10 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            Recent <span className="font-semibold text-theme">Projects</span>
+            Recent{" "}
+            <span className="font-semibold  text-blue-500">Projects</span>
           </h2>
           <p className="max-w-xl mt-4 md:mt-6 subtitle">
             I design products that prioritize functionality and user experience,
@@ -48,9 +49,7 @@ const Resume = () => {
                 <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
                   Secure-Saving
                 </h6>
-                <p className="text-[13px] md:text-sm text-theme">
-                  Jan, 2024 - Current
-                </p>
+                <p className="text-[13px] md:text-sm ">Jan, 2024 - Current</p>
               </div>
               <Timeline>
                 <TimelineItem className="pb-4">
@@ -94,9 +93,7 @@ const Resume = () => {
                 <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
                   Bismillah-Chinese
                 </h6>
-                <p className="text-[13px] md:text-sm text-theme">
-                  Feb, 2024 - Current
-                </p>
+                <p className="text-[13px] md:text-sm ">Feb, 2024 - Current</p>
               </div>
               <Timeline>
                 <TimelineItem className="pb-4">
@@ -141,7 +138,7 @@ const Resume = () => {
                 <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
                   Blood-Bond
                 </h6>
-                <p className="text-[13px] md:text-sm text-theme">DEC, 2023</p>
+                <p className="text-[13px] md:text-sm ">DEC, 2023</p>
               </div>
               <Timeline>
                 <TimelineItem className="pb-4">
@@ -186,7 +183,7 @@ const Resume = () => {
         <br />
         <div id="education" className="mb-8 mt-7 md:my-10 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            My <span className="font-semibold text-theme">Education</span>
+            My <span className="font-semibold ">Education</span>
           </h2>
           <p className="max-w-xl mt-4 md:mt-6 subtitle">
             Education is not just about acquiring knowledge; it&apos;s about
@@ -201,7 +198,7 @@ const Resume = () => {
                 <h6 className="text-sm font-medium text-black dark:text-white text-opacity-60 md:text-base md:text-opacity-100">
                   K.B.M College, Dinajpur
                 </h6>
-                <p className="text-[13px] md:text-sm text-theme">
+                <p className="text-[13px] md:text-sm ">
                   Expected Graduation: 2027
                 </p>
               </div>

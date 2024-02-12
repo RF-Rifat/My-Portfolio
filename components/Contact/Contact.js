@@ -19,7 +19,7 @@ const Contact = () => {
         </div>
         <div className="mb-10 mt-7 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            Contact <span className="font-semibold text-theme">Me.</span>
+            Contact <span className="font-semibold ">Me.</span>
           </h2>
           <p className="mt-3.5 md:mt-5 subtitle max-w-sectionTitle">
             I design products that are more than pretty. I make them shippable
@@ -49,17 +49,14 @@ const Contact = () => {
                 <li className="flex items-center max-lg:justify-center">
                   <MdPhone className="text-white h-5 w-5" />
                   <a href="tel:01770703939" className="text-white text-sm ml-3">
-                    <strong>+158 996 888</strong>
+                    <strong>+880 17707-03939</strong>
                   </a>
                 </li>
                 <li className="flex items-center max-lg:justify-center">
                   <MdLocationOn className="text-white h-5 w-5" />
-                  <a
-                    href="javascript:void(0)"
-                    className="text-white text-sm ml-3"
-                  >
+                  <div className="text-white text-sm ml-3">
                     <strong>Dinajpur, Chawliapotty Bangladesh</strong>
-                  </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -132,7 +129,7 @@ const Contact = () => {
         </div>
         {/* Location Map */}
         <iframe
-        id="map"
+          id="map"
           className="w-full overflow-hidden border-10 embed-map h-80 2xl:h-96 rounded-2xl"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3419.155888782968!2d88.6207782033622!3d25.63350034042849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1707640145880!5m2!1sen!2sbd"
           aria-label="Contact Map"
