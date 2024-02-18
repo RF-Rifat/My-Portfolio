@@ -17,7 +17,7 @@ export function SideNavbar() {
   const data = [
     {
       label: "",
-      value: "",
+      value: "/",
       icon: HomeIcon,
       desc: "",
     },
@@ -53,7 +53,7 @@ export function SideNavbar() {
   return (
     <>
       <div className="fixed right-4 lg:right-10 z-50 hidden md:block">
-        <Tabs value="" orientation="vertical">
+        <Tabs value="/" orientation="vertical">
           <div className="grid place-items-center h-screen">
             <TabsHeader className="w-14 gap-2 opacity-100">
               {data.map(({ label, value, icon }) => (
@@ -74,7 +74,7 @@ export function SideNavbar() {
       {/* mobile tab */}
 
       <div className="fixed bottom-0 md:hidden z-50">
-        <Tabs value="">
+        <Tabs value="/">
           <div className="mx-auto grid place-items-center w-screen">
             <div className="bg-blue-gray-500 rounded-t-lg">
               <TabsHeader className="opacity-100 flex justify-center w-full rounded-b-none">

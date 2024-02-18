@@ -5,8 +5,13 @@ import { BiMessageSquareAdd, BiSend } from "react-icons/bi";
 import { IoIosPersonAdd } from "react-icons/io";
 import { Input, Button, Textarea } from "@material-tailwind/react";
 import { FaRegPaperPlane } from "react-icons/fa";
-
+import { useForm, ValidationError } from "@formspree/react";
+import toast from "react-hot-toast";
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xleyqkzv");
+  if (state.succeeded) {
+    toast.success("Successfully Email Send!");
+  }
   return (
     <>
       <div
@@ -26,7 +31,7 @@ const Contact = () => {
             and usable, ttempor non mollit dolor et do aute
           </p>
         </div>
-        {/*./section-title*/}
+
         <div className="max-w-6xl mx-auto bg-white my-6 font-[sans-serif] text-[#011c2b]">
           <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-lg mt-8">
             <div className="bg-[#011c2b] rounded-lg p-6 max-lg:text-center">
@@ -62,7 +67,7 @@ const Contact = () => {
             </div>
 
             <div className="p-6 rounded-xl lg:col-span-2">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="grid sm:grid-cols-2 gap-8">
                   <div className="relative flex items-center">
                     <Input
@@ -70,6 +75,7 @@ const Contact = () => {
                       type="text"
                       color="blue"
                       label="First Name"
+                      name="fname"
                       className="px-2 py-3 w-full text-sm"
                     />
                     <IoIosPersonAdd className="w-[18px] h-[18px] absolute right-2 text-gray-700" />
@@ -81,6 +87,7 @@ const Contact = () => {
                       color="blue"
                       className="px-2 py-3 w-full text-sm"
                       label="Last Name"
+                      name="lname"
                     />
                     <IoIosPersonAdd className="w-[18px] h-[18px] absolute right-2 text-gray-700" />
                   </div>
@@ -91,6 +98,7 @@ const Contact = () => {
                       className="px-2 py-3 w-full text-sm"
                       type="number"
                       label="Phone No"
+                      name="phone"
                     />
                     <MdPhone className="w-[18px] h-[18px] absolute right-2 text-gray-700" />
                   </div>
@@ -101,6 +109,8 @@ const Contact = () => {
                       className="px-2 py-3 w-full text-sm"
                       type="email"
                       label="Email"
+                      name="email"
+                      id="email"
                     />
                     <MdEmail className="w-[18px] h-[18px] absolute right-2 text-gray-700" />
                   </div>
@@ -111,13 +121,20 @@ const Contact = () => {
                       label="Write Message"
                       className="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 outline-none"
                       defaultValue={""}
+                      name="message"
                     />
                     <BiMessageSquareAdd className="w-[18px] h-[18px] absolute right-2 text-gray-700" />
                   </div>
                 </div>
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
                 <Button
-                  type="button"
+                  type="submit"
                   color="blue"
+                  disabled={state.submitting}
                   className="mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded px-4 py-2.5 font-semibold"
                 >
                   <FaRegPaperPlane className="w-4 h-4 mr-2" />
@@ -127,7 +144,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {/* Location Map */}
+
         <iframe
           id="map"
           className="w-full overflow-hidden border-10 embed-map h-80 2xl:h-96 rounded-2xl"
@@ -138,5 +155,28 @@ const Contact = () => {
     </>
   );
 };
-
 export default Contact;
+
+// "use client";
+// import React from "react";
+// import { useForm, ValidationError } from "@formspree/react";
+// import { Button } from "@material-tailwind/react";
+// function Contact() {
+//   const [state, handleSubmit] = useForm("xleyqkzv");
+//   if (state.succeeded) {
+//     return <p>Thanks for joining!</p>;
+//   }
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <label htmlFor="email">Email Address</label>
+//       <input id="email" type="email" name="email" />
+//       <ValidationError prefix="Email" field="email" errors={state.errors} />
+//       <textarea id="message" name="message" />
+//       <ValidationError prefix="Message" field="message" errors={state.errors} />
+//       <Button type="submit" disabled={state.submitting}>
+//         Submit
+//       </Button>
+//     </form>
+//   );
+// }
+// export default Contact;

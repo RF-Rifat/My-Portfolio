@@ -33,7 +33,7 @@ const Resume = () => {
         <div className="mb-8 mt-7 md:my-10 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
             Recent{" "}
-            <span className="font-semibold  text-blue-500">Projects</span>
+            <span className="font-semibold text-blue-500">Projects</span>
           </h2>
           <p className="max-w-xl mt-4 md:mt-6 subtitle">
             I design products that prioritize functionality and user experience,

@@ -5,7 +5,7 @@ import Services from "@/components/Services/Services";
 import Aside from "@/components/Shared/Aside";
 import { SideNavbar } from "@/components/Shared/SideNavbar";
 import HeroSection from "@/components/home/heroSection";
-
+import { Toaster } from "react-hot-toast";
 export default function Home() {
   return (
     <div className="xl:grid xl:grid-flow-col gap-3 scroll-smooth">
@@ -20,6 +20,7 @@ export default function Home() {
         <Project />
         <Contact />
       </div>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 }
