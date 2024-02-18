@@ -7,7 +7,7 @@ import { Button } from "@material-tailwind/react";
 
 const HeroSection = () => {
   return (
-    <div className="px-5 py-8 bg-white rounded-2xl md:p-8 lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border">
+    <div className="px-5 py-8 bg-white rounded-2xl md:p-8 lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border dark:bg-dark">
       <div className="inline-flex items-center gap-4 font-semibold px-2 py-2 text-xs tracking-wide dark:text-white dark:bg-gray-800 border lg:px-5 section-name  200 rounded-4xl rounded">
         <FcHome className="h-5 w-5" />
         INTRODUCE

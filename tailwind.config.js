@@ -8,13 +8,14 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#3490dc",
+        secondary: "#38c172",
+        dark: "#0D2741",
+        // dark: "#2c5364",
+        darkText: "#cbd5e0",
       },
     },
   },
   plugins: [],
 });
-

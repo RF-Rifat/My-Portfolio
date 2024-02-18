@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/AnimatedCursor";
+import ToggleButton from "@/components/Shared/ToggleButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +17,12 @@ export default function RootLayout({ children }) {
       className="scroll-smooth"
       style={{ scrollBehavior: "smooth" }}
     >
-      <body className={inter.className}>
+      <body className={`dark:bg-dark ${inter.className}`}>
         <div className="max-w-[90rem] mx-auto">
           {children}
-
+          <div className="fixed top-10 z-50">
+            <ToggleButton />
+          </div>
           <CustomCursor />
         </div>
       </body>

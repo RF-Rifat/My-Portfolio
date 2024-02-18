@@ -1,8 +1,13 @@
 import React from "react";
 import "./icon.css";
-import { FaDiscord, FaFacebookSquare, FaGithub, FaLinkedin, FaSkype } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaFacebookSquare,
+  FaGithub,
+  FaLinkedin,
+  FaSkype,
+} from "react-icons/fa";
 import { IoMailOpenOutline } from "react-icons/io5";
-import { FaSquareWhatsapp } from "react-icons/fa6";
 
 const SocialIcons = () => {
   return (

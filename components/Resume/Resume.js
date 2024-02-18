@@ -23,7 +23,7 @@ const Resume = () => {
   return (
     <>
       <div
-        className="px-5 py-8 md:p-8 bg-white rounded-2xl service-section lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border"
+        className="px-5 py-8 md:p-8 bg-white rounded-2xl service-section lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border dark:text-white dark:bg-dark"
         id="work"
       >
         <div className="inline-flex items-center gap-4 px-2 font-semibold py-2 text-xs tracking-wide text-black dark:text-white border lg:px-5 section-name  200 rounded-4xl rounded">
@@ -32,8 +32,7 @@ const Resume = () => {
         </div>
         <div className="mb-8 mt-7 md:my-10 section-title">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
-            Recent{" "}
-            <span className="font-semibold text-blue-500">Projects</span>
+            Recent <span className="font-semibold text-blue-500">Projects</span>
           </h2>
           <p className="max-w-xl mt-4 md:mt-6 subtitle">
             I design products that prioritize functionality and user experience,

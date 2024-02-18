@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.darkBg{
+    background-image: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}

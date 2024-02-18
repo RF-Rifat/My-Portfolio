@@ -18,9 +18,9 @@ const Aside = () => {
       <aside
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-80"
-        } sticky top-4 h-[92svh] inset-0 z-50 my-4 ml-4 pb-10 w-72 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100 dark:bg-blue-gray-100 shadow-md shadow-blue-gray-500/5 bg-white`}
+        } sticky top-4 h-[92svh] inset-0 z-50 my-4 ml-4 pb-10 w-72 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100 dark:bg-dark shadow-md shadow-blue-gray-500/5 `}
       >
-        <div className="p-3 mb-3 overflow-hidden bg-white  rounded-2xl">
+        <div className="p-3 mb-3 overflow-hidden bg-white dark:bg-dark rounded-2xl">
           <div className="mx-4 mt-6 text-center lg:mx-6">
             <a
               className="block mx-auto border-6 pb-4"
@@ -52,7 +52,7 @@ const Aside = () => {
                 className="text-sm cd-words-wrapper designation  after:!bg-theme text-center w-full"
                 style={{ width: "107.213px" }}
               >
-                <div className="whitespace-nowrap font-semibold text-center ml-10">
+                <div className="whitespace-nowrap font-semibold text-center ml-10 dark:text-white">
                   <TypeWriter></TypeWriter>
                 </div>
               </h6>
@@ -64,25 +64,27 @@ const Aside = () => {
                 <span className="flex-1 font-medium text-black dark:text-white">
                   Residence:
                 </span>
-                <span>Bangladesh</span>
+                <span className="dark:text-white">Bangladesh</span>
               </li>
               <li className="flex text-sm">
                 <span className="flex-1 font-medium text-black dark:text-white">
                   City:
                 </span>
-                <span>Dinajpur</span>
+                <span className="dark:text-white">Dinajpur</span>
               </li>
               <li className="flex text-sm">
                 <span className="flex-1 font-medium text-black dark:text-white">
                   Age:
                 </span>
-                <span>21</span>
+                <span className="dark:text-white">21</span>
               </li>
             </ul>
           </div>
           <div className="border-t mx-4">
             <div className="border-t mb-4"></div>
-            <h2 className="ml-2 font-semibold mb-3">Let&apos;s Get Social</h2>
+            <h2 className="ml-2 font-semibold mb-3 dark:text-white">
+              Let&apos;s Get Social
+            </h2>
             <SocialIcons />
           </div>
         </div>
