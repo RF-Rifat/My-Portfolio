@@ -3,6 +3,7 @@ import "./globals.css";
 import CustomCursor from "@/components/AnimatedCursor";
 import ToggleButton from "@/components/Shared/ToggleButton";
 import { SpeedDialWithTextOutside } from "@/components/Shared/SpeedDial";
+import ChatApp from "@/components/Shared/ChatApp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
             <SpeedDialWithTextOutside />
           </div>
           <CustomCursor />
+          <ChatApp />
         </div>
       </body>
     </html>
