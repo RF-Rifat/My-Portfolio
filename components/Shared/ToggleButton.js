@@ -1,69 +1,19 @@
-/* import { Switch } from "@material-tailwind/react";
-import { useEffect, useState } from "react";
-
-const ToggleButton = () => {
-  const initialTheme = localStorage.getItem("theme") || "light";
-  const [theme, setTheme] = useState(initialTheme);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const handleThemeChange = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-  };
-
-  return (
-    <>
-      <div>
-        
-      </div>
-    </>
-  );
-};
-
-export default ToggleButton;
-
-
-
-<Switch
-  id="custom-switch-component"
-  color="indigo"
-  className="h-full w-full"
-  containerProps={{
-    className: "w-11 h-6",
-  }}
-  circleProps={{
-    className: "before:hidden left-0.5 border-none",
-  }}
-  checked={theme === "dark"}
-  onChange={handleThemeChange}
-/>; */
-
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import useTheme from "./useTheme";
 
 const ToggleButton = () => {
-  const initialTheme = localStorage.getItem("theme") || "dark";
-  const [theme, setTheme] = useState(initialTheme);
-
+  const { theme, toggleTheme } = useTheme();
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("theme", theme);
   }, [theme]);
-
-  const handleThemeChange = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-  };
 
   return (
     <button
       className="w-16 h-8 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
-      onClick={handleThemeChange}
+      onClick={toggleTheme} 
     >
+    
       <div
         id="switch-toggle"
         className={`w-8 h-8 relative rounded-full transition duration-500 transform ${
@@ -72,6 +22,7 @@ const ToggleButton = () => {
             : "bg-yellow-500 -translate-x-2"
         } p-1 text-white`}
       >
+        {/* Render appropriate icon based on current theme */}
         {theme === "dark" ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
