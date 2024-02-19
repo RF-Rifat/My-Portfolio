@@ -8,7 +8,7 @@ import { Button } from "@material-tailwind/react";
 const HeroSection = () => {
   return (
     <div className="px-5 py-8 bg-white rounded-2xl md:p-8 lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border dark:bg-dark">
-      <div className="inline-flex items-center gap-4 font-semibold px-2 py-2 text-xs tracking-wide dark:text-white dark:bg-gray-800 border lg:px-5 section-name  200 rounded-4xl rounded">
+      <div className="inline-flex items-center gap-4 font-semibold px-2 py-2 text-xs tracking-wide dark:text-white dark:bg-dark border lg:px-5 section-name  200 rounded-4xl rounded">
         <FcHome className="h-5 w-5" />
         INTRODUCE
       </div>
@@ -57,7 +57,7 @@ const HeroSection = () => {
             src="/homeProfile.jpg"
             height={1000}
             width={1000}
-            className="rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
+            className="rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50 dark:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
             alt="Hero Image"
           />
         </div>

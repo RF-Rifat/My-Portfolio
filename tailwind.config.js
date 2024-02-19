@@ -8,6 +8,9 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
+      },
       colors: {
         primary: "#3490dc",
         secondary: "#38c172",

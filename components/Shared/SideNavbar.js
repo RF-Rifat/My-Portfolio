@@ -54,7 +54,6 @@ export function SideNavbar() {
   return (
     <>
       <div className="fixed right-4 lg:right-10 z-50 hidden md:block">
-        
         <Tabs value="/" orientation="vertical">
           <div className="grid place-items-center h-screen">
             <TabsHeader
@@ -62,7 +61,10 @@ export function SideNavbar() {
                 className:
                   "border-b-2 border-gray-900 dark:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]",
               }}
-              className="w-14 gap-2 opacity-100"
+              className="w-14 gap-2 !opacity-100"
+              style={{
+                opacity: "100%",
+              }}
             >
               {data.map(({ label, value, icon }) => (
                 <Link key={icon} href={`#${value}`}>

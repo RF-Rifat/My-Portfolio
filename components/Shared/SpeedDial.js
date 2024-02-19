@@ -12,39 +12,39 @@ import {
   HomeIcon,
   CogIcon,
   Square3Stack3DIcon,
+  Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
 
 export function SpeedDialWithTextOutside() {
   const labelProps = {
     variant: "small",
-    color: "blue-gray",
     className:
-      "absolute top-2/4 -left-2/4 -translate-y-2/4 -translate-x-3/4 font-normal",
+      "absolute top-2/4 -left-2/4 -translate-y-2/4 -translate-x-3/4 font-normal dark:text-white",
   };
 
   return (
     <div className="relative w-full">
-      <div className="fixed bottom-10 right-10">
-        <SpeedDial>
-          <SpeedDialHandler>
+      <div className="fixed top-10 right-10">
+        <SpeedDial placement="right">
+          <SpeedDialHandler className="b" color="blue">
             <IconButton size="lg" className="rounded-full">
-              <PlusIcon className="h-5 w-5 transition-transform group-hover:rotate-45" />
+              <Cog6ToothIcon
+                className="h-5 w-5 transition-transform group-hover:rotate-45 animate-spin hover:animate-none"
+                style={{
+                  animation: "spin 1.5s linear infinite",
+                }}
+              />
             </IconButton>
           </SpeedDialHandler>
-          <SpeedDialContent>
-            <a href="#work">
-              <SpeedDialAction className="relative">
-                <HomeIcon className="h-5 w-5" />
-                <Typography {...labelProps}>Home</Typography>
-              </SpeedDialAction>
-            </a>
-            <SpeedDialAction className="relative">
-              <CogIcon className="h-5 w-5" />
-              <Typography {...labelProps}>Settings</Typography>
+          <SpeedDialContent className="flex-row rounded-full border border-blue-gray-50 bg-white shadow-xl shadow-black/10">
+            <SpeedDialAction className="bg-blue-gray-50">
+              <HomeIcon className="h-5 w-5" />
             </SpeedDialAction>
-            <SpeedDialAction className="relative">
+            <SpeedDialAction className="bg-blue-gray-50">
+              <CogIcon className="h-5 w-5" />
+            </SpeedDialAction>
+            <SpeedDialAction className="bg-blue-gray-50">
               <Square3Stack3DIcon className="h-5 w-5" />
-              <Typography {...labelProps}>Pages</Typography>
             </SpeedDialAction>
           </SpeedDialContent>
         </SpeedDial>

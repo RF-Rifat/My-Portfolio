@@ -30,11 +30,11 @@ const Resume = () => {
           <FcWorkflow className="h-5 w-5" />
           RESUME
         </div>
-        <div className="mb-8 mt-7 md:my-10 section-title">
+        <div className="mb-8 mt-7 md:my-10">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
             Recent <span className="font-semibold text-blue-500">Projects</span>
           </h2>
-          <p className="max-w-xl mt-4 md:mt-6 subtitle">
+          <p className="max-w-xl mt-4 md:mt-6 ">
             I design products that prioritize functionality and user experience,
             ensuring they are not only visually appealing but also practical and
             easy to use.
@@ -57,14 +57,14 @@ const Resume = () => {
                     <TimelineIcon className="md:p-2">
                       <PiCurrencyCircleDollarBold className="h-5 w-5" />
                     </TimelineIcon>
-                    <Typography variant="h5" color="blue-gray">
+                    <Typography variant="h5" className="dark:text-white">
                       Banking-Management System
                     </Typography>
                   </TimelineHeader>
                   <TimelineBody className="mb:pb-6">
                     <Typography
                       color="gary"
-                      className="font-normal text-gray-600 mb-3"
+                      className="font-normal text-gray-600 dark:text-blue-gray-100 mb-3"
                     >
                       In an era marked by digital advancements and increasing
                       reliance on technology, the financial sector is undergoing
@@ -101,14 +101,14 @@ const Resume = () => {
                     <TimelineIcon className="md:p-2">
                       <IoFastFoodOutline className="h-5 w-5" />
                     </TimelineIcon>
-                    <Typography variant="h5" color="blue-gray">
+                    <Typography variant="h5" className="dark:text-white">
                       Fusion Cuisine Delivery
                     </Typography>
                   </TimelineHeader>
                   <TimelineBody className="mb:pb-6">
                     <Typography
                       color="gary"
-                      className="font-normal text-gray-600 mb-3"
+                      className="font-normal text-gray-600 dark:text-blue-gray-100 mb-3"
                     >
                       Bismillah-Chinese brings the fusion of Chinese and local
                       cuisine right to your doorstep. In an era marked by
@@ -146,14 +146,14 @@ const Resume = () => {
                     <TimelineIcon className="md:p-2">
                       <BiDonateBlood className="h-5 w-5" />
                     </TimelineIcon>
-                    <Typography variant="h5" color="blue-gray">
+                    <Typography variant="h5" className="dark:text-white">
                       Connecting Blood Donors with Recipients
                     </Typography>
                   </TimelineHeader>
                   <TimelineBody className="mb:pb-6">
                     <Typography
                       color="gary"
-                      className="font-normal text-gray-600 mb-3"
+                      className="font-normal text-gray-600 dark:text-blue-gray-100 mb-3"
                     >
                       Blood-Bond serves as a crucial platform bridging the gap
                       between blood donors and recipients. In an era marked by
@@ -180,11 +180,11 @@ const Resume = () => {
           </ul>
         </div>
         <br />
-        <div id="education" className="mb-8 mt-7 md:my-10 section-title">
+        <div id="education" className="mb-8 mt-7 md:my-10">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
             My <span className="font-semibold ">Education</span>
           </h2>
-          <p className="max-w-xl mt-4 md:mt-6 subtitle">
+          <p className="max-w-xl mt-4 md:mt-6 ">
             Education is not just about acquiring knowledge; it&apos;s about
             embracing growth, honing skills, and fostering a deep understanding
             of the world around us.
@@ -208,14 +208,14 @@ const Resume = () => {
                     <TimelineIcon className="md:p-2">
                       <PiMathOperationsBold className="h-5 w-5" />
                     </TimelineIcon>
-                    <Typography variant="h5" color="blue-gray">
+                    <Typography variant="h5" className="dark:text-white">
                       Bachelor of Science in Mathematics
                     </Typography>
                   </TimelineHeader>
                   <TimelineBody className="mb:pb-6">
                     <Typography
                       color="gary"
-                      className="font-normal text-gray-600 mb-3"
+                      className="font-normal text-gray-600 dark:text-blue-gray-100 mb-3"
                     >
                       Pursuing a Bachelor of Science in Mathematics at K.B.M
                       College, Dinajpur. The program focuses on various aspects

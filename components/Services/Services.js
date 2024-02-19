@@ -9,18 +9,18 @@ const Services = () => {
         id="services"
         className="py-8 md:p-8 bg-white  rounded-2xl service-section lg:p-10 2xl:p-13 border-blue-gray-100 shadow-md shadow-blue-gray-500/5 border px-5 dark:bg-dark"
       >
-        <div className="inline-flex items-center gap-4 font-semibold px-2 py-2 text-xs tracking-wide dark:text-white dark:bg-gray-800 border lg:px-5 section-name  200 rounded-4xl rounded">
+        <div className="inline-flex items-center gap-4 font-semibold px-2 py-2 text-xs tracking-wide dark:text-white dark:bg-dark border lg:px-5 section-name  200 rounded-4xl rounded">
           <FcServices className="h-5 w-5" />
           SERVICES
         </div>
-        <div className="mb-8 mt-7 md:my-10 section-title">
+        <div className="mb-8 mt-7 md:my-10">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
             My{" "}
             <span className="font-semibold  text-blue-500 dark:text-white">
               Services
             </span>
           </h2>
-          <p className="max-w-xl mt-4 md:mt-6 subtitle dark:text-white">
+          <p className="max-w-xl mt-4 md:mt-6  dark:text-white">
             As a MERN stack developer, I offer the following services to help
             businesses thrive in the digital world:
           </p>

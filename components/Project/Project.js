@@ -10,12 +10,12 @@ const Project = () => {
           <FcNook className="h-5 w-5" />
           PORTFOLIO
         </div>
-        <div className="mt-5 mb-8 md:my-10 section-title">
+        <div className="mt-5 mb-8 md:my-10">
           <h2 className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
             Featured{" "}
-            <span className="font-semibold  text-blue-500">Projects</span>
+            <span className="font-semibold text-blue-500">Projects</span>
           </h2>
-          <p className="max-w-xl mt-4 md:mt-6 subtitle">
+          <p className="max-w-xl mt-4 md:mt-6 dark:text-white">
             Dive into a collection of my recent projects, where each endeavor is
             a testament to my passion for creating innovative solutions.
           </p>
@@ -25,13 +25,19 @@ const Project = () => {
           <div className="relative item md:col-span-2 z-1 group">
             <a
               className="flex items-center justify-center p-3 overflow-hidden border md:p-4 rounded-xl"
-              href="/"
+              href="https://savings-34498.web.app"
+              target="_blank"
             >
-              <div className="">
+              <div>
                 <figure className="relative h-96 w-full">
                   <img
-                    className="w-full rounded-xl object-cover object-center rounded-lg max-md:min-h-[17rem] max-md:w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs w-full ease-in-out duration-[3s] rounded-2xl object-top object-cover hover:object-bottom"
+                    className="w-full dark:hidden rounded-xl object-cover object-center rounded-lg max-md:min-h-[17rem] max-md:w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs w-full ease-in-out duration-[3s] rounded-2xl object-top object-cover hover:object-bottom"
                     src="/secure.png"
+                    alt="portfolio"
+                  />
+                  <img
+                    className="w-full hidden dark:block rounded-xl object-cover object-center rounded-lg max-md:min-h-[17rem] max-md:w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs w-full ease-in-out duration-[3s] rounded-2xl object-top object-cover hover:object-bottom"
+                    src="/secureDark.png"
                     alt="portfolio"
                   />
                   <figcaption className="absolute bottom-8 left-2/4 flex w-full md:w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-4 md:px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm px-4">
@@ -108,7 +114,7 @@ const Project = () => {
               <figure className="relative h-96 w-full">
                 <img
                   className="w-full rounded-xl object-cover object-center rounded-lg max-md:min-h-[17rem] max-md:w-full max-md:object-cover max-md:object-center transition-all duration-300 group-hover:blur-xs w-full ease-in-out duration-[3s] rounded-2xl object-top object-cover hover:object-bottom"
-                  src="/bloodbond.png"
+                  src="/trendy.png"
                   alt="portfolio"
                 />
                 <figcaption className="absolute bottom-8 left-2/4 flex w-full md:w-[calc(100%-4rem)] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-4 md:px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm px-4">
