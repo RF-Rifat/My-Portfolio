@@ -16,7 +16,7 @@ const ChatApp = () => {
   };
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full">
       <div className="absolute bottom-0 right-0">
         {" "}
         <div className="main z-50">

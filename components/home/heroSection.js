@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { Button } from "@material-tailwind/react";
+import TextAnimate from "../Shared/TextAnimate";
 
 const HeroSection = () => {
   return (
@@ -15,7 +16,7 @@ const HeroSection = () => {
       <div className="items-center gap-6 hero-content lg:flex lg:gap-10 space-y-4">
         <div className="text-content pt-7 lg:pt-8 max-lg:max-w-[30rem]">
           <h1 className="text-[32px] lg:text-2xl xl:text-2xl 2xl:text-3xl font-semibold text-black dark:text-white leading-1.27 lg:leading-1.27 xl:leading-1.27 2xl:leading-1.27 mb-4 lg:mb-5">
-            Crafting Seamless Digital Solutions <br />
+            <TextAnimate text={"Crafting Seamless Digital Solutions"} /> <br />
             <span className="text-blue-500">with MERN Stack Mastery</span>
           </h1>
           <p className="text-gray-600 dark:text-gray-300">

@@ -1,5 +1,5 @@
 "use client";
-import { Typography } from "@material-tailwind/react";
+import { Typography, Button } from "@material-tailwind/react";
 import { FcNook } from "react-icons/fc";
 
 const Project = () => {
@@ -184,14 +184,11 @@ const Project = () => {
           </div>
           {/*./portfolio-card*/}
         </div>
-        <div className="mt-10 text-center more-blogs md:mt-13">
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 text-[15px] font-medium border border-theme bg-theme text-white py-4.5 px-9 rounded-4xl leading-none transition-all duration-300"
-          >
+        <Button className="mt-6" color="blue">
+          <a href="https://github.com/RF-Rifat?tab=repositories">
             More Projects
           </a>
-        </div>
+        </Button>
       </div>
     </>
   );
