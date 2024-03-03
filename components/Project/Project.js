@@ -71,7 +71,7 @@ const Project = () => {
           <div className="relative item md:col-span-1 z-1 group">
             <a
               className="flex items-center justify-center p-3 overflow-hidden border md:p-4 rounded-xl  "
-              href="/"
+              href="https://bismillah-chinese.vercel.app/"
             >
               <figure className="relative h-96 w-full">
                 <img
@@ -97,7 +97,7 @@ const Project = () => {
             <ul className="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
               <li>
                 <a
-                  href="#"
+                  href=""
                   className="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl "
                 >
                   Branding
@@ -109,7 +109,7 @@ const Project = () => {
           <div className="relative item md:col-span-1 z-1 group">
             <a
               className="flex items-center justify-center p-3 overflow-hidden border md:p-4 rounded-xl  "
-              href="/"
+              href="https://trendy-ec732.web.app/"
             >
               <figure className="relative h-96 w-full">
                 <img
@@ -135,7 +135,7 @@ const Project = () => {
             <ul className="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
               <li>
                 <a
-                  href="#"
+                  href=""
                   className="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl "
                 >
                   Branding
@@ -174,7 +174,7 @@ const Project = () => {
             <ul className="absolute z-10 transition-all duration-500 opacity-0 md:top-9 md:right-9 top-6 right-6 group-hover:opacity-100">
               <li>
                 <a
-                  href="#"
+                  href=""
                   className="inline-flex items-center gap-2 px-5 py-3 text-sm font-light leading-none text-white transition-colors bg-metalBlack rounded-3xl"
                 >
                   Branding
